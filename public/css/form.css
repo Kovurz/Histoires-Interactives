@@ -1,0 +1,283 @@
+a {
+    outline:none;
+    color: #F7DA57;
+}
+
+
+
+.container{
+
+    border: 1px white solid;
+    width:25%;
+    height: 55%;
+    margin: auto;
+    background-color: #fcfcf8;
+    background-size: auto;
+    color: #F7DA57;
+}
+
+.containercreer{
+
+    border: 1px white solid;
+    width: 25%;
+    height: 90%;
+    margin: auto;
+    background-color: #fcfcf8;
+    color: #F7DA57;
+
+
+
+}
+
+.formregister{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "PakType Naskh Basic";
+    font-size: 30px;
+    text-align: center;
+    margin: 60px auto;
+    width: 75%;
+    height: 60%;
+    background-color: black;
+    background-size: auto;
+
+}
+
+.formlogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "PakType Naskh Basic";
+    font-size: 30px;
+    text-align: center;
+    margin: 70px auto;
+    padding-top:70px ;
+    width: 75%;
+    height: 55%;
+    background-color: black;
+
+}
+
+.formpsw{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "PakType Naskh Basic";
+    font-size: 30px;
+    text-align: center;
+    margin: 70px auto;
+    padding-top:70px ;
+    width: 75%;
+    height: 55%;
+    background-color: black;
+
+}
+
+.formcreer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "PakType Naskh Basic";
+    font-size: 30px;
+    text-align: center;
+    margin: 60px auto;
+    padding-top:10px ;
+    width: 75%;
+    height: 80%;
+    background-color: black;
+    font-size: 25px;
+
+}
+
+.formlier{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "PakType Naskh Basic";
+    font-size: 30px;
+    text-align: center;
+    margin: 60px auto;
+    width: 75%;
+    height: 70%;
+    background-color: black;
+
+}
+
+
+.formcreer input,textarea{
+
+    width: 80%;
+    height: 40%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+
+
+}
+
+.textphoto textarea{
+
+height: 40%;
+
+
+}
+
+.textphoto{
+
+    height: 20%;
+
+
+}
+
+.chap1{
+
+    color:#F7DA57 ;
+}
+
+.chap1 input{
+
+   width: 10%;
+
+
+  }
+
+.textech textarea{
+
+    height: 45%;
+
+}
+
+
+
+
+input {
+
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    font-size: 15px;
+    text-align: center;
+
+
+}
+
+.textphoto{
+
+    height: 20%;
+
+}
+
+.remember{
+
+width:10px;
+
+}
+
+.submit{
+
+    color: #F7DA57;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: black;
+    font-family: "PakType Naskh Basic";
+    border: solid #F7DA57 1px;
+    padding: 5px 25px;
+    margin-top: 50px;
+
+
+
+}
+.submitcreer button{
+
+    color: #F7DA57;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: black;
+    font-family: "PakType Naskh Basic";
+    border: solid #F7DA57 1px;
+    padding: 1px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.submitcreer button:hover{
+
+    background:rgba(247,218,87,0.8);
+    box-shadow: 2px 2px 1px 1px #F7DA57;
+    color: black;
+
+
+}
+
+.submit:hover{
+
+    background:rgba(247,218,87,0.3);
+    box-shadow: 2px 2px 1px 1px #F7DA57;
+
+
+}
+
+.remember{
+
+    padding: 0;
+    font-size: 1px;
+
+}
+
+.oublie{
+
+    padding-top: 5px;
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+
+}
+.creer h3{
+
+    text-align: center;
+    font-family: "PakType Naskh Basic";
+    color:#F7DA57 ;
+    font-size: 50px;
+    text-decoration: none;
+
+
+
+}
+.creer a{
+
+    text-align: center;
+    font-family: "PakType Naskh Basic";
+    color:white ;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-left: 10px;
+
+}
+
+
+.lier h3{
+
+font-family: "PakType Naskh Basic";
+    text-decoration: underline;
+    font-size: 40px;
+    color: #F7DA57;
+    text-align: center;
+
+}
+.lier h5{
+
+    font-family: "PakType Naskh Basic";;
+    font-size: 25px;
+    color: #F7DA57;
+
+}
+
+

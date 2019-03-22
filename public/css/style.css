@@ -1,0 +1,373 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color:white;
+}
+
+
+a {
+    outline:none;
+}
+
+
+#logo{
+
+    margin: 30px 0 0 60px;
+    width:150px;
+
+
+}
+
+header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+nav ul{
+    color: #ffffff;
+    display: flex;
+    margin-right: 100px;
+    font-family: "helvetica";
+    white-space:nowrap;
+    font-size: 25px;
+
+
+
+}
+
+nav ul li {
+    margin-left : 50px;
+
+
+}
+nav a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul{
+
+    list-style: none;
+
+}
+
+.icon-loupe{
+    font-size: 25px;
+    margin-right: -50px;
+
+}
+
+.icon-crayon {
+    font-size: 25px;
+    margin-right: -50px;
+
+}
+
+.TopHistoire {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 70%;
+    margin: auto;
+    margin-top:100px;
+}
+.divHistoires{
+    border: 1px white solid;
+    background-color: #fcfcf8;
+    width : 250px;
+    height: 350px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+.divHistoires:hover{
+    background-color: #fcfcf8;
+
+    transform: rotateZ(-5deg);
+    /*Shadows*/
+    -webkit-box-shadow: 10px 10px 20px 1px rgba(117,116,111,1);
+    -moz-box-shadow: 10px 10px 20px 1px rgba(117,116,111,1);
+    box-shadow: 10px 10px 20px 1px rgba(117,116,111,1);
+}
+
+
+.titreh{
+
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    overflow: hidden;
+    margin-top: 20px;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: -1px;
+
+
+}
+
+
+.divHistoires .imgh {
+    width : 200px;
+    height : 200px;
+    overflow : hidden;
+    border: 1px black solid;
+    margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.divHistoires img {
+    width  : 100%;
+    height: 100%;
+
+
+}
+
+.lireHistoires{
+    border: 1px white solid;
+    background-color: white;
+    width : 250px;
+    height: 380px;
+    margin: auto;
+    margin-top:100px;
+
+    /*Shadows*/
+    -webkit-box-shadow: 10px 10px 20px 1px rgba(117,116,111,1);
+    -moz-box-shadow: 10px 10px 20px 1px rgba(117,116,111,1);
+    box-shadow: 10px 10px 20px 1px rgba(117,116,111,1);
+}
+
+.lireHistoires .imgh {
+    width : 200px;
+    height : 200px;
+    overflow : hidden;
+    border: 1px black solid;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.lireHistoires img {
+    width  : 100%;
+    height: 100%;
+
+
+}
+
+.pitch{
+
+    font-size: 25px;
+    max-width:60% ;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+
+
+}
+
+.pitchResume{
+    font-size: 30px;
+    max-width:60% ;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+
+
+}
+
+pitchQuestion{
+    font-style: italic !important;
+}
+
+.lienpitch{
+
+    margin-top: 80px;
+   text-align: center;
+
+}
+
+
+.lienpitch a {
+
+    font-size: 20px;
+    border: 1px solid #F7DA57;
+    padding: 20px 40px;
+    color: #F7DA57;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.lienpitch a:hover{
+
+    background:rgba(247,218,87,0.3);
+    box-shadow: 2px 2px 1px 1px #F7DA57;
+
+}
+
+body {
+    height : 100%;
+}
+
+html {
+    position : relative;
+    height : 100%;
+    min-height : 100%;
+
+}
+
+footer{
+
+    position : absolute;
+    bottom : 0;
+    right : 0;
+
+}
+
+footer .ruban{
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+}
+
+@media screen and (max-width: 800px){
+
+    footer .ruban{
+
+        width: 100px;
+        position:fixed;
+        right: 0;
+        bottom:0;
+        display: none;
+
+    }
+
+
+}
+
+footer .empreintes{
+
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    width: 35%;
+    height: 10%;
+    display: none;
+
+
+}
+
+
+
+.jaime{
+    margin:auto;
+    color:white!important;
+    margin-top:12%;
+
+}
+
+.titreChapitre{
+    text-align: center;
+    font-size: 30px;
+}
+
+.p404{
+
+    background-image:url(../images/Page404.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* CSS pour J'aime J'aime pas*/
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+    /*border: 1px solid #fff;*/
+}
+
+/* Stuff after this is only to make things more pretty */
+input[type=radio] + label>img {
+    width: 80px;
+    height: 80px;
+    transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+    width: 100px;
+    height: 100px;
+    transform:
+            rotateZ(-10deg)
+            rotateX(10deg);
+}
+
+.like-unlike{
+    margin-top: 80px;
+    justify-content:center;
+
+}
+/*Fin CSS  J'aime J'aime pas*/
+
+@media screen and (max-width: 640px) {
+
+    header {
+
+        flex-direction: column;
+
+    }
+
+}
+
+#userName{
+    color:yellow;
+    font-size: 28px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+}
+.form-group{
+    height:84px;
+}
+
+div .reponses{
+    font-family: 'Indie Flower', cursive;
+    font-size: 23px;
+    max-width:60% ;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    background:rgba(247,218,87,0.3);
+    border-radius: 25px;
+    padding:10px;
+
+
+
+}
+
+div .reponses:hover{
+    box-shadow: 2px 2px 1px 1px #F7DA57;
+}
+
+
+
+.reponses a{
+    color: yellow;
+    text-decoration: none;
+}

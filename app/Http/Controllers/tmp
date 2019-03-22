@@ -1,0 +1,96 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Histoire;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+class ControleurCreation extends Controller
+{
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
+
+    //---------------------------------------------------------
+    public function creerHistoire() {
+        return view('creer_histoire');
+    }
+
+    public function enregistrerHistoire(Request $request) {
+         $this->validate(
+            $request,
+            [
+                'titre' => 'required',
+                'pitch' => 'required',
+                'photo' => 'nullable',
+            ]
+        );
+        $input = $request->only(['titre', 'pitch', 'photo']);
+        $user = DB::table('users')
+                    ->select('id')->where('name',$input['nom'])
+                    ->get();
+        DB::table('histoire')->insert(
+            [
+                'titre' => $input['titre'],
+                'pitch' => $input['pitch'],
+                'photo' => $input['photo'],
+                'active'=>(isset($input['active'])? 1:0)
+                'user_id' => $user
+            ]
+        );
+
+
+        return redirect('/histoire');
+    }
+
+
+    //---------------------------------------------------------
+
+    public function creerChapitre() {
+        return view('creer_chapitre');
+    }
+
+    public function enregistrerChapitre(Request $request) {
+        $this->validate(
+            $request,
+            [
+                'histoire_id'=>'required',
+                'titre' => 'nullable',
+                'titrecourt'=> 'required',
+                'photo' => 'nullable',
+                'texte' => 'nullable',
+                'premier'=>'required',
+                'question'=>'required',
+            ]
+        );
+        $input = $request->only(['histoire_id','titre','titrecourt', 'photo','texte', 'question']);
+        DB::table('chapitre')->insert(
+            [
+                'histoire_id'=> $input['histoire_id'],
+                'titre' => $input['titre'],
+                'titrecourt' => $input['titrecourt'],
+                'photo' => $input['photo'],
+                'texte' => $input['texte'],
+                'premier'=>(isset($input['premier'])? 1:0),
+                'question'=> $input['question']
+,
+            ]
+        );
+
+        return redirect('/chapitre');
+
+    }
+
+
+    //---------------------------------------------------------
+
+    public function lierChapitre() {
+        return view('lier_chapitre');
+    }
+
+    public function enregistrerLiaison() {
+        // TODO
+    }
+}

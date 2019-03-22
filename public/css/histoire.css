@@ -1,0 +1,139 @@
+a, input{
+    outline:none;
+}
+
+
+
+
+.meshistoires{
+
+    width:60%;
+    margin: auto;
+    text-align: center;
+    font-family: "PakType Naskh Basic";
+
+
+}
+
+.creer a{
+
+    color: #F7DA57;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: black;
+    font-family: "PakType Naskh Basic";
+    border: solid #F7DA57 1px;
+    padding: 1px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.meshistoires h2{
+
+    font-size: 45px;
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+.titreh2{
+
+    padding:10px!important;
+    white-space:normal!important;
+
+}
+
+.meshistoires table{
+
+    margin-right: auto;
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    white-space:nowrap;
+    margin : auto;
+}
+
+.meshistoires table a{
+
+    color: #F7DA57;
+
+}
+
+.meshistoires th{
+
+    border: 1px white solid;
+    color: #F7DA57;
+
+}
+
+.meshistoires td{
+
+    padding:5px 80px;
+    border: 1px white solid;
+
+
+}
+
+.pitchh{
+
+    font-size: 22px;
+    text-align: center;
+    padding: 10px!important;
+    white-space:normal!important;
+
+}
+
+
+
+.formcreerh{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    font-family: "PakType Naskh Basic";
+    font-size:25px;
+}
+
+.formcreerh h3{
+
+    color: #F7DA57;
+    font-size: 40px;
+    text-decoration: underline;
+
+}
+
+
+.formcreerh textarea {
+
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 20%;
+    height:35%;
+    color:black;
+    font-family: "PakType Naskh Basic";
+
+}
+
+
+
+/* CSS histoire active */
+
+.activer input[type="checkbox"]+label {
+    background: url('../images/visible.png') no-repeat;
+    width:20px;
+    height: 20px;
+}
+.activer input[type="checkbox"]:checked + label {
+    background: url('../images/invisible.png');
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/*Fin CSS  histoire active*/
